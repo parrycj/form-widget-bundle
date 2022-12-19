@@ -1,22 +1,37 @@
 {
-    "microservices": [],
-    "microfrontends": [
+  "microservices": [],
+  "microfrontends": [
+    {
+      "name": "form-widget",
+      "customElement": "form-widget",
+      "stack": "react",
+      "type": "widget",
+      "group": "free",
+      "publicFolder": "public",
+      "titles": {
+        "en": "form-widget",
+        "it": "form-widget"
+      },
+      "configMfe": "form-widget-config",
+      "params": [
         {
-            "name": "form-widget",
-            "customElement": "form-widget",
-            "stack": "react",
-            "type": "widget",
-            "group": "free",
-            "publicFolder": "public",
-            "titles": {
-                "en": "form-widget",
-                "it": "form-widget"
-            }
+          "name": "name",
+          "description": "The name for Hello World"
         }
-    ],
-    "svc": [],
-    "name": "form-widget-bundle",
-    "version": "0.0.1",
-    "description": "form-widget-bundle description",
-    "type": "bundle"
+      ]
+    },
+    {
+      "name": "form-widget-config",
+      "customElement": "form-widget-config",
+      "stack": "react",
+      "type": "widget-config",
+      "group": "free",
+      "publicFolder": "public"
+    }
+  ],
+  "svc": [],
+  "name": "form-widget-bundle",
+  "version": "0.0.1",
+  "description": "form-widget-bundle description",
+  "type": "bundle"
 }

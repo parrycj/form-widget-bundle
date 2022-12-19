@@ -27,15 +27,16 @@
     <title>React App</title>
   </head>
   <body>
-    <form-widget />
+    <form-widget-config />
     <script>
       function injectConfigIntoMfe() {
-        fetch("%PUBLIC_URL%/form-config.json").then(async (response) => {
-          const config = await response.text();
-          const mfeEl = document.getElementsByTagName("form-widget")[0];
-          mfeEl.setAttribute("config", config);
+        fetch("%PUBLIC_URL%/mfe-config.json").then(async (response) => {
+          const config = await response.json();
+          const mfeEl = document.getElementsByTagName("form-widget-config")[0];
+          mfeEl.config = config;
         });
       }
+
       injectConfigIntoMfe();
     </script>
   </body>
