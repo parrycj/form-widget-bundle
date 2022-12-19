@@ -15,8 +15,11 @@
       "configMfe": "form-widget-config",
       "params": [
         {
-          "name": "name",
-          "description": "The name for Hello World"
+          "question": "question",
+          "option1": "option1",
+          "option2": "option2",
+          "option3": "option3",
+          "description": "The question and options for answers on your form"
         }
       ]
     },

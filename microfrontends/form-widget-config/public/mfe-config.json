@@ -1,3 +1,6 @@
 {
-  "name": "John Brown"
+  "question": "What is your age?",
+  "option1": "0-25",
+  "option2": "26-50",
+  "option3": "55+"
 }
